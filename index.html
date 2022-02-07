@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>The Gift Shop</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="fontawesome/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="gifts.js"></script>
+        <script src="script.js" defer></script>
+        <style></style>
+        
+        <script>
+            'use strict';
+            
+        </script>
+    </head>
+    <body>
+        <div id="gridContainer">
+    <header>
+        <h1>The Gift Shop</h1>
+    </header>
+
+    <nav id ="topnav">
+        
+		<ul>
+			<li><a href="index.html"class="fas fa-home fa-2x"></a></li>
+			<li><a href="info.html" class="fas fa-heart fa-2x"></a>
+                <ul>
+                    <li>
+                        <div class="wishCart"> 
+                           
+                        </div> <!--cart-->
+                        
+                    </li>
+                    <button id="clearwishBtn" onclick="clearWishFnc()">Clear Wishlist</button>
+                </ul>
+            </li>
+			<li><a href="contact.html" class="far fa-envelope-open fa-2x"></a></li>
+            <li><div class="shopping-bag"><a href ="shoppingBag.html" class="fas fa-shopping-bag fa-2x">Cart<div class="totalItemsInCart">0</div></a></div></li>
+		</ul>
+    </nav>
+    
+    <main >
+        <div class="container">
+            <div class="products">
+               
+                <!--every item has an img,price, description/ actions are: add to cart, add to wish list-->
+               <!--  <div class="item">
+                    <div class="itemWrapper">
+                    <div class="itemImg">
+                        <img src="img/gift1.jpg" alt="gift1">
+                    </div>
+
+                    <div class="itemDescription">
+                        <h2>Gift 1</h2>
+                        <p>white ceramic vase </p>
+                    </div>
+
+                    <div class="itemPrice">
+                        <h3>50$</h3>
+                    </div>
+
+                    <div class="itemAddToWishlist">
+                        <img src="Icons/heart.png" alt="add to wishlist">
+                    </div>
+
+                    <div class="itemAddToCart">
+                        <img src="Icons/bagPlus.png" alt="add to cart">
+                    </div>
+
+                    </div>
+                </div> -->
+                
+            </div><!--products-->
+            
+        </div> <!--container-->
+
+    </main>
+    <aside>
+        <div class="cart">
+            <div class="cartHeader">
+                <div class="column1">Item</div>
+                <div class="column2">Price</div>
+                <div class="column3">Units</div>
+            </div>
+            <hr>
+            <div class="cartItems">
+               
+                <!-- <div class="cartItem">
+                    <div class="itemInfo">
+                        <img src="img/gift1.jpg" alt="gift1">
+                        <h3>Gift 1</h3>
+                    </div>
+                    <div class="unitPrice">
+                        <small>$</small>50
+                    </div>
+                    <div class="units">
+                        <div class="btn minus">-</div>
+                        <div class="unitsNumber">1</div>
+                        <div class="btn plus">+</div>           
+                    </div>
+                </div>  -->
+                
+            </div> <!--cartitems-->
+            <button id="clearAllBtn" onclick="clearCartFnc()">Clear Cart</button>
+           
+            <div class="cartFooter">
+                
+                <div class="subTotal">Subtotal (0 items): $0</div>
+                <div class="checkout">
+                    <a href="https://www.paypal.com/de/home" target="_blank"> Proceed to checkout</a>
+                </div>
+            </div>
+        </div> <!--cart-->
+    </aside>
+</div> <!--gridContainer-->
+    
+    </body>
+</html>
